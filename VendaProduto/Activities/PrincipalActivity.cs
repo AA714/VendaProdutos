@@ -27,7 +27,7 @@ namespace VendaProduto.Activities
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            
+
             SetContentView(Resource.Layout.activity_principal);
 
             tlbPrincipal = FindViewById<ToolbarV7>(Resource.Id.tlbPrincipal);
@@ -78,11 +78,6 @@ namespace VendaProduto.Activities
         }
 
         //TODO - O método OnActivityResult deverá ser criado para recarregar a lista de pedidos.
-
-
-
-
-
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
